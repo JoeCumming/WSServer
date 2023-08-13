@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <h2>@ViewData["currentStatus"]</h2>
+</div>
+
+<form id="status" method="POST">
+    <label for="text">Input: </label>
+    <input type="text" name="status" autofocus>
+</form>
